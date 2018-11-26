@@ -1,0 +1,25 @@
+@borderColor: #dde8ee;
+
+.textarea {
+	transition: border-color 0.2s ease-in, color 0.2s ease-in;
+	width: 100%;
+	min-height: 100px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: @borderColor;
+	border-radius: 8px;
+	background-color: #fff;
+	padding: 15px;
+	opacity: 0.5;
+	color: #383737;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: @baseFont;
+	line-height: 1.5;
+	letter-spacing: 0.32px;
+	
+	&:focus {
+		outline-style: none;
+		border-color: darken(@borderColor, 7);
+	}
+}
