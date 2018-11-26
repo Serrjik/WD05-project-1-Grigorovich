@@ -8,8 +8,10 @@ block content
 	.sticky-footer-wrapper
 		.sticky-footer-content
 			include ../sections/header.pug
-			.container
-				include ../sections/blog-post.pug
-				include ../sections/form-comment.pug
+			.container.content-padding
+				.row
+					.col-10.col-offset-1
+						include ../sections/blog-post.pug
+						include ../sections/form-comment.pug
 
 		include ../sections/footer.pug
